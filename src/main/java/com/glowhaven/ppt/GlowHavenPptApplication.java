@@ -2,6 +2,7 @@ package com.glowhaven.ppt;
 
 import static spark.Spark.get;
 import static spark.Spark.port;
+import static spark.Spark.*;
 
 public class GlowHavenPptApplication {
 
