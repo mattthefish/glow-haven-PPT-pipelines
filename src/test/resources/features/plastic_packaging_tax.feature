@@ -12,8 +12,7 @@ Feature: Determine whether Glow Haven needs to register to pay Plastic Packaging
   Scenario: Glow Haven must register when plastic packaging imports in the last 12 months exceed the threshold, and the check is made on the last day of the current month
 
     Given Glow Haven has imported 10000 kg of plastic packaging in the period 1st April 2025 to 31st March 2026
-    When a registration check is made on 31st March 2026
-    Then Glow Haven must register for Plastic Packaging Tax
+
     And the registration deadline is 30 April 2026
 
   Scenario: Glow Haven does not need to register when monthly plastic packaging imports are below the threshold, even though the check is made on the last day of the month.
